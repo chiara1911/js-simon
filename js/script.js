@@ -2,14 +2,17 @@
 
 // creo un array per mettere i 5 numeri casuali
 
-let number= numRandom(5);
-let memory;
-console.log(number)
+
+// ;
+const simon = document.getElementById('simon');  
+let number = numRandom(5);
+
+const send = document.querySelector('button');
+console.log(simon);
 // funzione per generare 5 numeri random
 
 function numRandom(x, z) {
     y = [];
-    
     let i = 0;
     while (i < x) {
         z = getRndInteger(1, 100);
@@ -19,7 +22,17 @@ function numRandom(x, z) {
     console.log(y);
     return y;
 }
+send.addEventListener('click', function(){     
+    simon.innerHTML = number;       
+    let memory = setTimeout(nascosto, 3000);
+function nascosto (){
+   simon.remove(number);
+}       
+});
 
+
+
+// funzione per stampare in pagina i numeri per 30 secondi
 
 
 
