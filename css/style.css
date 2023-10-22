@@ -1,7 +1,7 @@
 
 main{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-color: #ffcb69;
 }
 
@@ -15,4 +15,19 @@ main{
     color:#6699cc ;
     padding: 120px;
     margin-left: 150px;
+    border: solid 2px black;
+    border-radius: 25%;
+    
+}
+
+
+input{
+    height: 400px;
+    width: 400px;
+    background-color: #c45f2a;
+    font-size: 50px;
+    border-radius: 25%;
+    padding-left: 30px;
+    margin-right: 150px;
+    border: solid 2px black;
 }
