@@ -1,14 +1,14 @@
 // 1. Visualizzare in pagina 5 numeri casuali.Da lì parte un timer di 30 secondi.
 
 const simon = document.getElementById('simon'); //costante h3 con dentro i numeri random
-let quantitàNumRandom = 2;
+let quantitàNumRandom = 5;
 let number = []; //array numeri random
 let numUser = []; // array numeri utente
 let arrNum = [];
 let equalNum = [];
 let send = document.querySelector('button'); //bottone inizia memory
 const sendResult = document.getElementById('sendResult'); //bottone Indovina
-let utente = document.querySelector('h1');
+let utente = document.querySelector('h2');
 // creo un array per mettere i 5 numeri casuali
 function numRandom(x) {
     y = [];
@@ -45,12 +45,13 @@ sendResult.addEventListener('click', function () {
         console.log('equalNum' + equalNum);
         if (equalNum.length === quantitàNumRandom) {
             console.log('hai vinto');
-            text = 'Hai Indovinato tutti i numeri';
+            text = 'Hai Indovinato tutti i numeri, ora le porte di Durin si apriranno...';
+            
         }
-        else{
+        else {
             text = 'Non hai indovinato tutti i numeri, quindi hai perso perchè hai indovinato solo ' + equalNum;
         }
-    }        
+    }
     else {
         console.log('continua...');
         text = 'continua...';
